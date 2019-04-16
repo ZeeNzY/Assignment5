@@ -42,7 +42,6 @@ public class Actors {
 
         private String actors_idNum, actor_Name, actor_LastName, actor_EyeColor;
         private int age;
-        private Set<Actors> productions;
 
         public Builder actorsId( String actors_idNum) {
             this.actors_idNum = actors_idNum;
