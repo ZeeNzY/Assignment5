@@ -1,7 +1,7 @@
 package ac.za.cput.projects.domain;
 
 
-public class Actors extends Talent{
+public class Actors{
 
     private double salary;
 

@@ -4,7 +4,7 @@ public class Persons {
 
     private String type;
 
-    Persons(){}
+    private Persons(){}
 
     private Persons(Persons.Builder builder) {
         this.type = builder.type;

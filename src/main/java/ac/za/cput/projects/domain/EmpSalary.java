@@ -1,10 +1,11 @@
 package ac.za.cput.projects.domain;
 
-public class EmpSalary extends EmpPosition {
+public class EmpSalary {
 
     private double salary;
 
-    EmpSalary() {}
+    private EmpSalary() {
+    }
 
     private EmpSalary(EmpSalary.Builder builder) {
         this.salary = builder.salary;

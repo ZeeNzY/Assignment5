@@ -4,7 +4,7 @@ public class Films extends Production {
 
     private String production_Name, production_Budget;
 
-    Films(){}
+    private Films(){}
 
     private Films(Films.Builder builder) {
         this.production_Name = builder.production_Name;

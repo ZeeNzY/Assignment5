@@ -5,7 +5,7 @@ public class Production {
 
     private String production_id, production_type;
 
-    Production(){
+    private Production(){
     }
 
     private Production(Production.Builder builder) {

@@ -4,7 +4,9 @@ public class EmpPosition {
 
     private String jobposition;
 
-    EmpPosition(){}
+    private EmpPosition(){
+
+    }
 
     private EmpPosition(EmpPosition.Builder builder) {
         this.jobposition = builder.jobposition;

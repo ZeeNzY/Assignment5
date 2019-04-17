@@ -4,7 +4,7 @@ public class Employees extends Persons {
 
     private String empNum, position;
 
-    Employees(){}
+    private Employees(){}
 
     private Employees(Employees.Builder builder) {
         this.empNum = builder.empNum;

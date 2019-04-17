@@ -1,10 +1,11 @@
 package ac.za.cput.projects.domain;
 
-public class Talent extends Persons {
+public class Talent {
 
     private String talent_id, category, eyeColor;
 
-    Talent(){}
+    private Talent(){
+    }
 
     private Talent(Talent.Builder builder) {
         this.talent_id = builder.talent_id;
