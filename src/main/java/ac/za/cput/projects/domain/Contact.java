@@ -8,7 +8,7 @@ public class Contact {
 
     private Contact(Contact.Builder builder) {
         this.cellnumber = builder.cellnumber;
-        this.cellnumber = builder.cellnumber;
+        this.emailAddress = builder.emailAddress;
     }
 
     public String getcellnumber() {
