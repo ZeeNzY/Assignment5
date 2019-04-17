@@ -3,7 +3,8 @@ Agency has talent they recruit.
 The talent are the main actors and axtras.
 The agency has their employees.
 Employees have different positions in the company.
-The agency gets productions that book their talent.
+The agency has productions.
+Productions can make booking for the talents.
 A talent can be booked for a production.
 The production can be adverts or film gigs.
 The agency has a salary payment for the employees.
