@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35aaaa22-bcc8-4688-81d6-8a67f0ab9f5c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Actors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Actors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java" afterDir="false" />
-    </list>
+    <list default="true" id="35aaaa22-bcc8-4688-81d6-8a67f0ab9f5c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,29 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Actors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Extras.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpSalary.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Contact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="102">
+              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -82,6 +61,10 @@
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpSalary.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Actors.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Extras.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Demographics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpAddress.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Contact.java" />
       </list>
     </option>
   </component>
@@ -209,7 +192,7 @@
       <workItem from="1554924593998" duration="5571000" />
       <workItem from="1554930344477" duration="464000" />
       <workItem from="1555424961591" duration="3722000" />
-      <workItem from="1555454899909" duration="6335000" />
+      <workItem from="1555454899909" duration="7724000" />
     </task>
     <task id="LOCAL-00001" summary="File Committed">
       <created>1554929442452</created>
@@ -236,7 +219,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16092000" />
+    <option name="totallyTimeSpent" value="17481000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -268,7 +251,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -380,13 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -404,13 +380,6 @@
             <element signature="e#427#428#0" expanded="true" />
             <element signature="e#463#464#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Talent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -443,10 +412,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Actors.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpSalary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="153">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -457,10 +426,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpSalary.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Talent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Demographics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Actors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="24" column="22" selection-start-line="10" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
