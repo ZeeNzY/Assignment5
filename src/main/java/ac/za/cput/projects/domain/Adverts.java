@@ -4,7 +4,7 @@ public class Adverts extends Production{
 
     private String production_Name, production_Budget, ad_title;
 
-    Adverts(){}
+    private Adverts(){}
 
     private Adverts(Adverts.Builder builder) {
         this.production_Name = builder.production_Name;
@@ -28,17 +28,17 @@ public class Adverts extends Production{
 
         private String production_Name, production_Budget, ad_title;
 
-        public Adverts.Builder production_Name(String production_Name) {
+        public Builder production_Name(String production_Name) {
             this.production_Name = production_Name;
             return this;
         }
 
-        public Adverts.Builder production_Budget(String production_Budget) {
+        public Builder production_Budget(String production_Budget) {
             this.production_Budget = production_Budget;
             return this;
         }
 
-        public Adverts.Builder ad_title(String ad_title) {
+        public Builder ad_title(String ad_title) {
             this.ad_title = ad_title;
             return this;
         }

@@ -4,7 +4,7 @@ public class Contact {
 
     private String cellnumber, emailAddress;
 
-    Contact() {}
+    private Contact() {}
 
     private Contact(Contact.Builder builder) {
         this.cellnumber = builder.cellnumber;

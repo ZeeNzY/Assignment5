@@ -4,7 +4,7 @@ public class Booking {
 
     private String booking_id, talent_id, agency_id, dateOfbooking;
 
-    Booking(){}
+    private Booking(){}
 
     private Booking(Builder builder) {
         this.booking_id = builder.booking_id;
@@ -48,7 +48,7 @@ public class Booking {
             return this;
         }
 
-        public Booking.Builder dateOfbooking_id(String dateOfbooking) {
+        public Booking.Builder dateOfbooking(String dateOfbooking) {
             this.dateOfbooking = dateOfbooking;
             return this;
         }

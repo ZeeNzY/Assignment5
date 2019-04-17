@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35aaaa22-bcc8-4688-81d6-8a67f0ab9f5c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Booking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Demographics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Demographics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ActorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ActorFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,11 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ActorFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Contact.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/DemographicFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -48,13 +63,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Filmproduction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ActorFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/ProductionHouse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Agency.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Production.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Movies.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Booking.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Talent.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/TalentPayment.java" />
@@ -63,10 +74,21 @@
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpSalary.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Actors.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Extras.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Demographics.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpAddress.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/EmpContact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ActorFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AdvertFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AddressFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Agency.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AgencyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Booking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/BookingFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Contact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ContactFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Demographics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/DemographicFactory.java" />
       </list>
     </option>
   </component>
@@ -98,6 +120,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,7 +176,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,7 +216,8 @@
       <workItem from="1554924593998" duration="5571000" />
       <workItem from="1554930344477" duration="464000" />
       <workItem from="1555424961591" duration="3722000" />
-      <workItem from="1555454899909" duration="7838000" />
+      <workItem from="1555454899909" duration="8088000" />
+      <workItem from="1555497585161" duration="3783000" />
     </task>
     <task id="LOCAL-00001" summary="File Committed">
       <created>1554929442452</created>
@@ -221,7 +244,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17595000" />
+    <option name="totallyTimeSpent" value="21628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -236,7 +259,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2473525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25113463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -253,7 +276,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -310,24 +333,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Filmproduction.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ActorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Agency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/ProductionHouse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -343,32 +348,6 @@
             <element signature="e#433#434#0" expanded="true" />
             <element signature="e#473#474#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Booking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -442,39 +421,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Demographics.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AddressFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Address.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Actors.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AgencyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Adverts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AdvertFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="24" column="22" selection-start-line="10" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/BookingFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ContactFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Agency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Demographics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ActorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/DemographicFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>

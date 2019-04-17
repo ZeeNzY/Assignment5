@@ -4,9 +4,9 @@ public class Address {
 
     private String homeAddress,postalAddress,postalCode;
 
-    Address(){}
+    private Address(){}
 
-    private Address(Address.Builder builder) {
+    private Address(Builder builder) {
         this.homeAddress = builder.homeAddress;
         this.postalAddress = builder.postalAddress;
         this.postalCode = builder.postalCode;

@@ -4,7 +4,7 @@ public class Demographics extends Persons {
 
     private String race, gender, dateOfBirth;
 
-    Demographics(){}
+    private Demographics(){}
 
     private Demographics(Demographics.Builder builder) {
         this.race = builder.race;
