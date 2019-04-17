@@ -2,14 +2,14 @@ package ac.za.cput.projects.domain;
 
 public class Adverts extends Production{
 
-    private String production_Name, production_Budget, ad_company;
+    private String production_Name, production_Budget, ad_title;
 
     Adverts(){}
 
     private Adverts(Adverts.Builder builder) {
         this.production_Name = builder.production_Name;
         this.production_Budget = builder.production_Budget;
-        this.ad_company = builder.ad_company;
+        this.ad_title = builder.ad_title;
     }
 
     public String getproduction_Name() {
@@ -20,13 +20,13 @@ public class Adverts extends Production{
         return production_Budget;
     }
 
-    public String getad_companyt() {
+    public String getAd_title() {
         return production_Budget;
     }
 
     public static class Builder {
 
-        private String production_Name, production_Budget, ad_company;
+        private String production_Name, production_Budget, ad_title;
 
         public Adverts.Builder production_Name(String production_Name) {
             this.production_Name = production_Name;
@@ -38,8 +38,8 @@ public class Adverts extends Production{
             return this;
         }
 
-        public Adverts.Builder ad_company(String ad_company) {
-            this.ad_company = ad_company;
+        public Adverts.Builder ad_title(String ad_title) {
+            this.ad_title = ad_title;
             return this;
         }
 

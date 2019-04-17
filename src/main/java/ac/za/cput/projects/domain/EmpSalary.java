@@ -1,14 +1,12 @@
 package ac.za.cput.projects.domain;
 
-
-public class Actors extends Talent{
+public class EmpSalary extends EmpPosition {
 
     private double salary;
 
+    EmpSalary() {}
 
-    private Actors(){}
-
-    private Actors(Actors.Builder builder) {
+    private EmpSalary(EmpSalary.Builder builder) {
         this.salary = builder.salary;
     }
 
@@ -27,10 +25,9 @@ public class Actors extends Talent{
         }
 
 
-        public Actors build() {
-            return new Actors(this);
+        public EmpSalary build() {
+            return new EmpSalary(this);
         }
 
     }
-
 }
