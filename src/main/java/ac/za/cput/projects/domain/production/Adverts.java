@@ -1,6 +1,6 @@
-package ac.za.cput.projects.domain;
+package ac.za.cput.projects.domain.production;
 
-public class Adverts extends Production{
+public class Adverts extends Production {
 
     private String production_Name, production_Budget, ad_title;
 

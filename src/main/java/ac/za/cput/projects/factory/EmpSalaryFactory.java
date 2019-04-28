@@ -1,7 +1,7 @@
 package ac.za.cput.projects.factory;
 
 
-import ac.za.cput.projects.domain.EmpSalary;
+import ac.za.cput.projects.domain.payments.EmpSalary;
 
 public class EmpSalaryFactory {
 

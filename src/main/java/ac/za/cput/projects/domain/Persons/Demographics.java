@@ -1,6 +1,6 @@
-package ac.za.cput.projects.domain;
+package ac.za.cput.projects.domain.Persons;
 
-public class Demographics extends Persons {
+public class Demographics {
 
     private String race, gender, dateOfBirth;
 

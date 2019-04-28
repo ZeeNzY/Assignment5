@@ -1,6 +1,6 @@
 package ac.za.cput.projects.factory;
 
-import ac.za.cput.projects.domain.Production;
+import ac.za.cput.projects.domain.production.Production;
 
 public class ProductionFactory {
 

@@ -1,6 +1,6 @@
 package ac.za.cput.projects.factory;
 
-import ac.za.cput.projects.domain.Extras;
+import ac.za.cput.projects.domain.Persons.Extras;
 
 
 public class ExtrasFactory {

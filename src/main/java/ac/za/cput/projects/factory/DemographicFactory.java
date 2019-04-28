@@ -1,6 +1,6 @@
 package ac.za.cput.projects.factory;
 
-import ac.za.cput.projects.domain.Demographics;
+import ac.za.cput.projects.domain.Persons.Demographics;
 
 
 public class DemographicFactory {

@@ -1,6 +1,6 @@
 package ac.za.cput.projects.factory;
 
-import ac.za.cput.projects.domain.Booking;
+import ac.za.cput.projects.domain.production.Booking;
 
 
 public class BookingFactory {

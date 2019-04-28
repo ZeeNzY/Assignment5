@@ -1,6 +1,6 @@
-package ac.za.cput.projects.domain;
+package ac.za.cput.projects.domain.Persons;
 
-public class Extras extends Talent {
+public class Extras {
 
     private double daily_rate;
 

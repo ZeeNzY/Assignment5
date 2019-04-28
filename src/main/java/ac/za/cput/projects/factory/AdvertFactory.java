@@ -1,6 +1,6 @@
 package ac.za.cput.projects.factory;
 
-import ac.za.cput.projects.domain.Adverts;
+import ac.za.cput.projects.domain.production.Adverts;
 
 
 public class AdvertFactory {

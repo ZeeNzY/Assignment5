@@ -1,11 +1,11 @@
-package ac.za.cput.projects.domain;
+package ac.za.cput.projects.domain.production;
 
 public class Production {
 
 
     private String production_id, production_type;
 
-    private Production(){
+    public Production(){
     }
 
     private Production(Production.Builder builder) {

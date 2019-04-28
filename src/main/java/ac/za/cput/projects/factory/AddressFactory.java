@@ -1,6 +1,6 @@
 package ac.za.cput.projects.factory;
 
-import ac.za.cput.projects.domain.Address;
+import ac.za.cput.projects.domain.Persons.Address;
 
 public class AddressFactory {
 

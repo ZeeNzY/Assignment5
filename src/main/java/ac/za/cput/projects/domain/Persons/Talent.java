@@ -1,19 +1,23 @@
-package ac.za.cput.projects.domain;
+package ac.za.cput.projects.domain.Persons;
 
 public class Talent {
 
-    private String talent_id, category, eyeColor;
+    private String category, eyeColor;
+    private int talent_id = 1;
+    Persons persons;
 
     private Talent(){
     }
 
-    private Talent(Talent.Builder builder) {
+    private Talent(Builder builder) {
+        this.persons = builder.persons;
         this.talent_id = builder.talent_id;
         this.category = builder.category;
         this.eyeColor = builder.eyeColor;
+        talent_id++;
     }
 
-    public String gettalent_id() {
+    public int gettalent_id() {
         return talent_id;
     }
 
@@ -27,10 +31,18 @@ public class Talent {
 
     public static class Builder {
 
-        private String talent_id, category, eyeColor;
+        private String category, eyeColor;
+        private int talent_id = 1;
+        Persons persons;
 
-        public Talent.Builder talent_Id(String talent_id) {
+        public Talent.Builder persons(Persons persons){
+            this.persons = persons;
+            return this;
+        }
+
+        public Talent.Builder talent_Id(int talent_id) {
             this.talent_id = talent_id;
+            talent_id++;
             return this;
         }
 

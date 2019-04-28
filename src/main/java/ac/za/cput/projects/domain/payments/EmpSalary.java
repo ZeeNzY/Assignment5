@@ -1,14 +1,13 @@
-package ac.za.cput.projects.domain;
+package ac.za.cput.projects.domain.payments;
 
-
-public class Actors{
+public class EmpSalary {
 
     private double salary;
 
+    private EmpSalary() {
+    }
 
-    private Actors(){}
-
-    private Actors(Actors.Builder builder) {
+    private EmpSalary(EmpSalary.Builder builder) {
         this.salary = builder.salary;
     }
 
@@ -27,10 +26,9 @@ public class Actors{
         }
 
 
-        public Actors build() {
-            return new Actors(this);
+        public EmpSalary build() {
+            return new EmpSalary(this);
         }
 
     }
-
 }

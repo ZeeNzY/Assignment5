@@ -1,7 +1,7 @@
 package ac.za.cput.projects.factory;
 
 
-import ac.za.cput.projects.domain.Persons;
+import ac.za.cput.projects.domain.Persons.Persons;
 
 public class PersonsFactory {
 

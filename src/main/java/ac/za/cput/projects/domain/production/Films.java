@@ -1,4 +1,4 @@
-package ac.za.cput.projects.domain;
+package ac.za.cput.projects.domain.production;
 
 public class Films extends Production {
 

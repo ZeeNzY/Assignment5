@@ -1,6 +1,6 @@
 package ac.za.cput.projects.factory;
 
-import ac.za.cput.projects.domain.TalentPayment;
+import ac.za.cput.projects.domain.payments.TalentPayment;
 
 public class TalentPaymentFactory {
 

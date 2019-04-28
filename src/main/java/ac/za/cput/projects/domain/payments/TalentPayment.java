@@ -1,4 +1,4 @@
-package ac.za.cput.projects.domain;
+package ac.za.cput.projects.domain.payments;
 
 public class TalentPayment {
 
