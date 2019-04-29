@@ -4,6 +4,7 @@ import ac.za.cput.projects.domain.Agency;
 import ac.za.cput.projects.repository.AgencyRepository;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class AgencyRepoImp implements AgencyRepository {
@@ -28,6 +29,10 @@ public class AgencyRepoImp implements AgencyRepository {
 
     public Agency read(String agency_id){
         // find the course that matches the id and return it if exist
+
+        while(agency.contains(agency_id)){
+
+        }
         return null;
     }
 
