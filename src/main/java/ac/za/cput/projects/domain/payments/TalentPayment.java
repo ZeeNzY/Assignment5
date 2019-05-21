@@ -1,6 +1,10 @@
 package ac.za.cput.projects.domain.payments;
 
-public class TalentPayment {
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
+public class TalentPayment implements Payable{
 
     private double salary;
 
@@ -12,6 +16,11 @@ public class TalentPayment {
 
     public double gettalentPayment() {
         return salary;
+    }
+
+    @Override
+    public double getPaymentAmount() {
+        return 0;
     }
 
 
@@ -29,5 +38,25 @@ public class TalentPayment {
             return new TalentPayment(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "TalentPayment{" +
+                "salary=" + salary +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TalentPayment that = (TalentPayment) o;
+        return Double.compare(that.salary, salary) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(salary);
     }
 }

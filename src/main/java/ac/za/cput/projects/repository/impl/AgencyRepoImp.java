@@ -2,18 +2,18 @@ package ac.za.cput.projects.repository.impl;
 
 import ac.za.cput.projects.domain.Agency;
 import ac.za.cput.projects.repository.AgencyRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
+@Repository("InMemoryA")
 public class AgencyRepoImp implements AgencyRepository {
 
     private static AgencyRepoImp repository = null;
-    private Set<Agency> agency;
+    private Map<String,Agency> agency;
 
     private AgencyRepoImp(){
-        this.agency = new HashSet<>();
+        this.agency = new HashMap<>();
     }
 
     public static AgencyRepository getRepository(){
@@ -23,32 +23,29 @@ public class AgencyRepoImp implements AgencyRepository {
 
 
     public Agency create(Agency agency){
-        this.agency.add(agency);
+        this.agency.put(agency.getAgencyId(),agency);
         return agency;
     }
 
     public Agency read(String agency_id){
-        // find the course that matches the id and return it if exist
-
-        while(agency.contains(agency_id)){
-
-        }
-        return null;
+        return this.agency.get(agency_id);
     }
 
     public void delete(String agency_id) {
-        // find the course, delete it if it exist
-
+        this.agency.remove(agency_id);
     }
 
     public Agency update(Agency agency){
-        // find the course, update it and delete it if it exists
-        return agency;
+        repository.agency.replace(agency.getAgencyId(),agency);
+        return this.agency.get(agency.getAgencyId());
     }
 
 
     public Set<Agency> getAll(){
-        return this.agency;
+        Collection<Agency> agencyCollection = this.agency.values();
+        Set<Agency> set = new HashSet<>();
+        set.addAll(agencyCollection);
+        return set;
     }
 
 }

@@ -2,6 +2,7 @@ package ac.za.cput.projects.service.impl;
 
 import ac.za.cput.projects.domain.Persons.Talent;
 import ac.za.cput.projects.repository.TalentRepository;
+import ac.za.cput.projects.repository.impl.TalentRepoImp;
 import ac.za.cput.projects.service.TalentService;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,16 @@ import java.util.Set;
 public class TalentServiceImp implements TalentService {
 
     private TalentRepository repository;
+    private static TalentServiceImp service = null;
+
+    private TalentServiceImp(){
+        this.repository = TalentRepoImp.getRepository();
+    }
+
+    public static TalentServiceImp getService(){
+        if (service == null) service = new TalentServiceImp();
+        return service;
+    }
 
     @Override
     public Talent create(Talent talent) {

@@ -1,6 +1,10 @@
 package ac.za.cput.projects.domain.payments;
 
-public class Extras {
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
+public class Extras implements Payable{
 
     private double daily_rate;
 
@@ -13,6 +17,11 @@ public class Extras {
 
     public double getdaily_rate() {
         return daily_rate;
+    }
+
+    @Override
+    public double getPaymentAmount() {
+        return 0;
     }
 
 
@@ -30,5 +39,25 @@ public class Extras {
             return new Extras(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Extras{" +
+                "daily_rate=" + daily_rate +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Extras extras = (Extras) o;
+        return Double.compare(extras.daily_rate, daily_rate) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(daily_rate);
     }
 }

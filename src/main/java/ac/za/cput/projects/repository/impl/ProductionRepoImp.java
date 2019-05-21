@@ -2,17 +2,17 @@ package ac.za.cput.projects.repository.impl;
 
 import ac.za.cput.projects.domain.production.Production;
 import ac.za.cput.projects.repository.ProductionRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
-
+import java.util.*;
+@Repository("InMemoryP")
 public class ProductionRepoImp implements ProductionRepository {
 
     private static ProductionRepoImp repository = null;
-    private Set<Production> production;
+    private Map<String, Production> production;
 
     private ProductionRepoImp(){
-        this.production = new HashSet<>();
+        this.production = new HashMap<>();
     }
 
     public static ProductionRepository getRepository(){
@@ -22,27 +22,29 @@ public class ProductionRepoImp implements ProductionRepository {
 
 
     public Production create(Production production){
-        this.production.add(production);
+        this.production.put(production.getProduction_id(),production);
         return production;
     }
 
     public Production read(String productionId){
-        // find the course that matches the id and return it if exist
-        return null;
+        return this.production.get(productionId);
     }
 
     public void delete(String productionId) {
-        // find the course, delete it if it exist
+        this.production.remove(productionId);
     }
 
     public Production update(Production production){
-        // find the course, update it and delete it if it exists
-        return production;
+        this.production.replace(production.getProduction_id(),production);
+        return this.production.get(production.getProduction_id());
     }
 
 
     public Set<Production> getAll(){
-        return this.production;
+        Collection<Production> productionCollection = this.production.values();
+        Set<Production> set = new HashSet<>();
+        set.addAll(productionCollection);
+        return set;
     }
 
 }

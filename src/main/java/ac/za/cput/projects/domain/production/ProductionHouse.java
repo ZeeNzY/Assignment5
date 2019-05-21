@@ -1,5 +1,9 @@
 package ac.za.cput.projects.domain.production;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class ProductionHouse {
 
     private String prodhouseId, prodhouse_Name, prodhouse_Address;
@@ -51,10 +55,25 @@ public class ProductionHouse {
 
     @Override
     public String toString() {
-        return "Production House {" +
-                "Production House's Id ='" + prodhouseId + '\'' +
-                ", Production House's Name ='" + prodhouse_Name + '\'' +
-                ", Production's Address ='" + prodhouse_Address +
+        return "ProductionHouse{" +
+                "prodhouseId='" + prodhouseId + '\'' +
+                ", prodhouse_Name='" + prodhouse_Name + '\'' +
+                ", prodhouse_Address='" + prodhouse_Address + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ProductionHouse that = (ProductionHouse) o;
+        return Objects.equals(prodhouseId, that.prodhouseId) &&
+                Objects.equals(prodhouse_Name, that.prodhouse_Name) &&
+                Objects.equals(prodhouse_Address, that.prodhouse_Address);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(prodhouseId, prodhouse_Name, prodhouse_Address);
     }
 }

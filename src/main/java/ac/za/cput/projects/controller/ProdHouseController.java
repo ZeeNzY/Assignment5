@@ -13,7 +13,7 @@ import java.util.Set;
 public class ProdHouseController {
 
     @Autowired
-    @Qualifier("ServiceImpl")
+   // @Qualifier("ServiceImpl")
     private ProdHouseService service;
 
     @PostMapping("/create")

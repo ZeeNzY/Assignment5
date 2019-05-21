@@ -1,5 +1,9 @@
 package ac.za.cput.projects.domain.production;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Production {
 
 
@@ -40,4 +44,25 @@ public class Production {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Production{" +
+                "production_id='" + production_id + '\'' +
+                ", production_type='" + production_type + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Production that = (Production) o;
+        return Objects.equals(production_id, that.production_id) &&
+                Objects.equals(production_type, that.production_type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(production_id, production_type);
+    }
 }

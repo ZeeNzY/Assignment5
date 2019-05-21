@@ -2,6 +2,7 @@ package ac.za.cput.projects.service.impl;
 
 import ac.za.cput.projects.domain.Persons.AgencyEmployee;
 import ac.za.cput.projects.repository.EmployeeRepository;
+import ac.za.cput.projects.repository.impl.EmployeeRepoImp;
 import ac.za.cput.projects.service.EmployeeService;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,16 @@ import java.util.Set;
 public class EmployeeServiceImp implements EmployeeService {
 
     private EmployeeRepository repository;
+    private static EmployeeServiceImp service = null;
+
+    private EmployeeServiceImp(){
+        this.repository = EmployeeRepoImp.getRepository();
+    }
+
+    public static EmployeeServiceImp getService(){
+        if (service == null) service = new EmployeeServiceImp();
+        return service;
+    }
 
     @Override
     public AgencyEmployee create(AgencyEmployee agencyEmployee) {

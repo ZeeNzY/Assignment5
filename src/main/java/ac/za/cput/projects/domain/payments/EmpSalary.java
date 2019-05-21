@@ -1,6 +1,10 @@
 package ac.za.cput.projects.domain.payments;
 
-public class EmpSalary {
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
+public class EmpSalary implements Payable{
 
     private double salary;
 
@@ -13,6 +17,11 @@ public class EmpSalary {
 
     public double getsalary() {
         return salary;
+    }
+
+    @Override
+    public double getPaymentAmount() {
+        return 0;
     }
 
 
@@ -30,5 +39,25 @@ public class EmpSalary {
             return new EmpSalary(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "EmpSalary{" +
+                "salary=" + salary +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        EmpSalary empSalary = (EmpSalary) o;
+        return Double.compare(empSalary.salary, salary) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(salary);
     }
 }

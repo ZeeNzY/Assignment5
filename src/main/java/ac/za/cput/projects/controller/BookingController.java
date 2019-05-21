@@ -14,7 +14,7 @@ import java.util.Set;
 public class BookingController {
 
     @Autowired
-    @Qualifier("ServiceImpl")
+  //  @Qualifier("ServiceImpl")
     private BookingService service;
 
     @PostMapping("/create")

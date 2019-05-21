@@ -12,7 +12,7 @@ import java.util.Set;
 @RequestMapping("/talent")
 public class TalentController {
         @Autowired
-        @Qualifier("ServiceImpl")
+      //  @Qualifier("ServiceImpl")
         private TalentService service;
 
         @PostMapping("/create")

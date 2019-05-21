@@ -1,9 +1,13 @@
 package ac.za.cput.projects.domain.Persons;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class AgencyEmployee {
 
     private String position;
-    private int emp_id;
+    private String emp_id;
     private Persons persons;
 
     private String name = persons.getName();
@@ -21,7 +25,7 @@ public class AgencyEmployee {
     }
 
     public String getposition() { return position; }
-    public int getEmp_id(){
+    public String getEmp_id(){
         return emp_id;
     }
     public String getName() {
@@ -39,13 +43,13 @@ public class AgencyEmployee {
     public static class Builder {
 
         private String position;
-        private int emp_id;
+        private String emp_id;
         private Persons persons;
         private String name = persons.getName();
         private String surname = persons.getSurname();
         private String type = persons.gettype();
 
-        public Builder emp_id(int emp_id){
+        public Builder emp_id(String emp_id){
             this.emp_id = emp_id;
             return this;
         }
@@ -74,5 +78,35 @@ public class AgencyEmployee {
             return new AgencyEmployee(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "AgencyEmployee{" +
+                "position='" + position + '\'' +
+                ", emp_id=" + emp_id +
+                ", persons=" + persons +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        AgencyEmployee that = (AgencyEmployee) o;
+        return emp_id == that.emp_id &&
+                Objects.equals(position, that.position) &&
+                Objects.equals(persons, that.persons) &&
+                Objects.equals(name, that.name) &&
+                Objects.equals(surname, that.surname) &&
+                Objects.equals(type, that.type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(position, emp_id, persons, name, surname, type);
     }
 }

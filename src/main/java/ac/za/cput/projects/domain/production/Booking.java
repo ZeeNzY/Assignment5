@@ -1,5 +1,9 @@
 package ac.za.cput.projects.domain.production;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Booking {
 
     private String booking_id, talent_id, agency_id, dateOfbooking;
@@ -59,4 +63,29 @@ public class Booking {
 
     }
 
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "booking_id='" + booking_id + '\'' +
+                ", talent_id='" + talent_id + '\'' +
+                ", agency_id='" + agency_id + '\'' +
+                ", dateOfbooking='" + dateOfbooking + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Booking booking = (Booking) o;
+        return Objects.equals(booking_id, booking.booking_id) &&
+                Objects.equals(talent_id, booking.talent_id) &&
+                Objects.equals(agency_id, booking.agency_id) &&
+                Objects.equals(dateOfbooking, booking.dateOfbooking);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(booking_id, talent_id, agency_id, dateOfbooking);
+    }
 }

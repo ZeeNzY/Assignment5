@@ -1,7 +1,11 @@
 package ac.za.cput.projects.domain.Persons;
 
 import ac.za.cput.projects.domain.payments.Payable;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+
+import java.util.Objects;
+@EntityScan
 public class Persons {
 
     private String name;
@@ -55,5 +59,29 @@ public class Persons {
             return new Persons(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Persons{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Persons persons = (Persons) o;
+        return Objects.equals(name, persons.name) &&
+                Objects.equals(surname, persons.surname) &&
+                Objects.equals(type, persons.type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, type);
     }
 }

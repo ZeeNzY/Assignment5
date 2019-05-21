@@ -13,7 +13,7 @@ import java.util.Set;
 @RequestMapping("/employee")
 public class EmployeeController {
     @Autowired
-    @Qualifier("ServiceImpl")
+  //  @Qualifier("ServiceImpl")
     private EmployeeService service;
 
     @PostMapping("/create")

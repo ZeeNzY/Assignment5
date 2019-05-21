@@ -2,17 +2,18 @@ package ac.za.cput.projects.repository.impl;
 
 import ac.za.cput.projects.domain.production.ProductionHouse;
 import ac.za.cput.projects.repository.ProdHouseRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
+@Repository("InMemoryPh")
 public class ProdHouseRepoImp implements ProdHouseRepository {
 
     private static ProdHouseRepoImp repository = null;
-    private Set<ProductionHouse> productionHouse;
+    private Map<String,ProductionHouse> productionHouse;
 
     private ProdHouseRepoImp(){
-        this.productionHouse = new HashSet<>();
+        this.productionHouse = new HashMap<>();
     }
 
     public static ProdHouseRepository getRepository(){
@@ -22,13 +23,12 @@ public class ProdHouseRepoImp implements ProdHouseRepository {
 
 
     public ProductionHouse create(ProductionHouse productionHouse){
-        this.productionHouse.add(productionHouse);
+        this.productionHouse.put(productionHouse.getProdhouseId(),productionHouse);
         return productionHouse;
     }
 
     public ProductionHouse read(String courseId){
-        // find the course that matches the id and return it if exist
-        return null;
+        return this.productionHouse.get(productionHouse);
     }
 
     public void delete(String prodHouseId) {
@@ -36,12 +36,16 @@ public class ProdHouseRepoImp implements ProdHouseRepository {
     }
 
     public ProductionHouse update(ProductionHouse productionHouse){
-        // find the course, update it and delete it if it exists
-        return productionHouse;
+        this.productionHouse.replace(productionHouse.getProdhouseId(),productionHouse);
+        return this.productionHouse.get(productionHouse.getProdhouseId());
     }
 
 
     public Set<ProductionHouse> getAll(){
-        return this.productionHouse;
+
+        Collection<ProductionHouse> productionHouseCollection = this.productionHouse.values();
+        Set<ProductionHouse> set = new HashSet<>();
+        set.addAll(productionHouseCollection);
+        return set;
     }
 }

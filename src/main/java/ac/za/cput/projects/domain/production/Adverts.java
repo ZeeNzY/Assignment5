@@ -1,5 +1,9 @@
 package ac.za.cput.projects.domain.production;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Adverts extends Production {
 
     private String production_Name, production_Budget, ad_title;
@@ -47,5 +51,29 @@ public class Adverts extends Production {
             return new Adverts(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Adverts{" +
+                "production_Name='" + production_Name + '\'' +
+                ", production_Budget='" + production_Budget + '\'' +
+                ", ad_title='" + ad_title + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Adverts adverts = (Adverts) o;
+        return Objects.equals(production_Name, adverts.production_Name) &&
+                Objects.equals(production_Budget, adverts.production_Budget) &&
+                Objects.equals(ad_title, adverts.ad_title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(production_Name, production_Budget, ad_title);
     }
 }

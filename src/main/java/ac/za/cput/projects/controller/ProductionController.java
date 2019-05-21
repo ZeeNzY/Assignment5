@@ -12,7 +12,7 @@ import java.util.Set;
 @RequestMapping("/production")
 public class ProductionController {
     @Autowired
-    @Qualifier("ServiceImpl")
+   // @Qualifier("ServiceImpl")
     private ProductionService service;
 
     @PostMapping("/create")

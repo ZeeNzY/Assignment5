@@ -1,5 +1,9 @@
 package ac.za.cput.projects.domain.Persons;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Demographics {
 
     private String race, gender, dateOfBirth;
@@ -49,5 +53,29 @@ public class Demographics {
             return new Demographics(this);
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Demographics{" +
+                "race='" + race + '\'' +
+                ", gender='" + gender + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Demographics that = (Demographics) o;
+        return Objects.equals(race, that.race) &&
+                Objects.equals(gender, that.gender) &&
+                Objects.equals(dateOfBirth, that.dateOfBirth);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(race, gender, dateOfBirth);
     }
 }

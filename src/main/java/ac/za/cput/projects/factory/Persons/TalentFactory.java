@@ -7,7 +7,7 @@ public class TalentFactory {
 
     Persons persons;
 
-    public static Talent getTalent(int talent_id,String name, String surname, String type, String category, String eyeColor) {
+    public static Talent getTalent(String talent_id,String name, String surname, String type, String category, String eyeColor) {
         return new Talent.Builder().talent_Id(talent_id)
                 .name(name)
                 .surname(surname)

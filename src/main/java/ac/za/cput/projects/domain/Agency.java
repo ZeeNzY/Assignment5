@@ -1,5 +1,9 @@
 package ac.za.cput.projects.domain;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class Agency {
 
     private String agency_id, agency_Name, agency_address,  actors, extras;
@@ -78,11 +82,31 @@ public class Agency {
 
     @Override
     public String toString() {
-        return "Agency: {" +
-                "Agency's Id ='" + agency_id + '\'' +
-                ", Agency's Name ='" + agency_Name + '\'' +
-                ", Agency's year established ='" + year_established +
+        return "Agency{" +
+                "agency_id='" + agency_id + '\'' +
+                ", agency_Name='" + agency_Name + '\'' +
+                ", agency_address='" + agency_address + '\'' +
+                ", actors='" + actors + '\'' +
+                ", extras='" + extras + '\'' +
+                ", year_established='" + year_established + '\'' +
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Agency agency = (Agency) o;
+        return Objects.equals(agency_id, agency.agency_id) &&
+                Objects.equals(agency_Name, agency.agency_Name) &&
+                Objects.equals(agency_address, agency.agency_address) &&
+                Objects.equals(actors, agency.actors) &&
+                Objects.equals(extras, agency.extras) &&
+                Objects.equals(year_established, agency.year_established);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(agency_id, agency_Name, agency_address, actors, extras, year_established);
+    }
 }

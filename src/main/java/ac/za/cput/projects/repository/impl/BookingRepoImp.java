@@ -2,17 +2,18 @@ package ac.za.cput.projects.repository.impl;
 
 import ac.za.cput.projects.domain.production.Booking;
 import ac.za.cput.projects.repository.BookingRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
+@Repository("InMemoryB")
 public class BookingRepoImp implements BookingRepository {
 
     private static BookingRepoImp repository = null;
-    private Set<Booking> booking;
+    private Map<String,Booking> booking;
 
     private BookingRepoImp() {
-        this.booking = new HashSet<>();
+        this.booking = new HashMap<>();
     }
 
     public static BookingRepository getRepository(){
@@ -21,27 +22,28 @@ public class BookingRepoImp implements BookingRepository {
     }
 
     public Booking create(Booking booking){
-        this.booking.add(booking);
+        this.booking.put(booking.getbooking_id(),booking);
         return booking;
     }
 
     public Booking read(String bookingId){
-        //find the student in the set and return it if it exist
-        return null;
+        return this.booking.get(bookingId);
     }
 
     public Booking update(Booking booking) {
-        // find the student, update it and return the updated student
-        return null;
+        this.booking.replace(booking.getbooking_id(),booking);
+        return this.booking.get(booking.getbooking_id());
     }
 
     public void delete(String bookingId) {
-        //find the student and delete it if it exists
-
+        this.booking.remove(booking);
     }
 
     public Set<Booking> getAll(){
-        return this.booking;
+        Collection<Booking> bookingCollection = this.booking.values();
+        Set<Booking> set = new HashSet<>();
+        set.addAll(bookingCollection);
+        return set;
     }
 
 }
