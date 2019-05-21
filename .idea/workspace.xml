@@ -2,33 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35aaaa22-bcc8-4688-81d6-8a67f0ab9f5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/EmployeesFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/TalentFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/Actors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/payments/Actors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/AgencyEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/AgencyEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/Extras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/payments/Extras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/Persons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/Persons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/Talent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/Talent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ActorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/ActorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AddressFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/AddressFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AdvertFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Production/AdvertFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/AgencyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Production/AgencyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/BookingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Production/BookingFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ContactFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/ContactFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/DemographicFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/DemographicFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/EmpSalaryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Payment/EmpSalaryFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/EmployeesFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ExtrasFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Payment/ExtrasFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/FilmsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Production/FilmsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/PersonsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/PersonsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ProductionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Production/ProductionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/ProductionHouseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Production/ProductionHouseFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/TalentFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/TalentPaymentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Payment/TalentPaymentFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/repository/MainRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/repository/MainRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Actors$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Actors$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Actors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/AgencyEmployee$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/AgencyEmployee$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/AgencyEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/AgencyEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Extras$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Extras$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Extras.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Talent$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Talent$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Talent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/domain/Persons/Talent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/ActorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/AddressFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/AdvertFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/AgencyFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/BookingFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/ContactFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/DemographicFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/EmpSalaryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/EmployeesFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/ExtrasFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/FilmsFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/PersonsFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/ProductionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/ProductionHouseFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/TalentFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ac/za/cput/projects/factory/TalentPaymentFactory.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,10 +44,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/service/impl/TalentServiceImp.java">
+        <entry file="file://$PROJECT_DIR$/src/resource/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="17">
+              <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ac/za/cput/projects/Controller/AgencyControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,9 +69,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -78,9 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/repository/impl/ExtrasRepoImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/repository/ExtrasRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/repository/impl/ActorsRepoImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/repository/MainRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/repository/ProductionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/repository/EmployeeRepository.java" />
@@ -129,6 +135,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/service/impl/EmployeeServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/service/impl/ProdHouseServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/java/ac/za/cput/projects/service/impl/ProductionServiceImp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ac/za/cput/projects/factory/Persons/TalentFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/resource/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/ac/za/cput/projects/Controller/AgencyControllerTest.java" />
       </list>
     </option>
   </component>
@@ -175,50 +184,37 @@
               <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
               <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -245,6 +241,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ac.za.cput.projects.controller" />
+      <recent name="ac.za.cput.projects.factory.Persons" />
       <recent name="ac.za.cput.projects.repository.impl" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -262,6 +260,28 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="AgencyControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Assignment5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ac.za.cput.projects.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ac.za.cput.projects.Controller" />
+      <option name="MAIN_CLASS_NAME" value="ac.za.cput.projects.Controller.AgencyControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AgencyControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\ZeeNzY\AppData\Roaming\Subversion</configuration>
@@ -283,7 +303,7 @@
       <workItem from="1556385789892" duration="14026000" />
       <workItem from="1557757251221" duration="4506000" />
       <workItem from="1558193213208" duration="660000" />
-      <workItem from="1558389172925" duration="6445000" />
+      <workItem from="1558389172925" duration="10742000" />
     </task>
     <task id="LOCAL-00001" summary="File Committed">
       <created>1554929442452</created>
@@ -309,8 +329,19 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AgencyControllerTest - 2019.05.21 at 02h 56m 47s.xml">
+      <configuration name="AgencyControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AgencyControllerTest - 2019.05.21 at 03h 10m 09s.xml">
+      <configuration name="AgencyControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AgencyControllerTest - 2019.05.21 at 03h 11m 22s.xml">
+      <configuration name="AgencyControllerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64346000" />
+    <option name="totallyTimeSpent" value="68643000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -326,28 +357,28 @@
     <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Spring" sideWeight="0.49924356" weight="0.3289689" />
+      <window_info anchor="bottom" id="Java Enterprise" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.299509" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.29787233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4977307" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4977307" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.29787233" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49848714" weight="0.29787233" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50226927" side_tool="true" weight="0.29787233" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -399,62 +430,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="File Committed" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/domain/Persons/Demographics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/ActorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/ContactFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/AddressFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/DemographicFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/PersonsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/EmployeesFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/TalentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,24 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/controller/AgencyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/service/impl/AgencyServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -841,11 +802,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/service/impl/TalentServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="226">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ac/za/cput/projects/repository/impl/AgencyRepoImpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ac/za/cput/projects/factory/Persons/TalentFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/factory/Persons/TalentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="123" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12/lib/src.zip!/java.base/java/lang/reflect/Constructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="499" column="24" selection-start-line="499" selection-start-column="24" selection-end-line="499" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.6.RELEASE/spring-core-5.1.6.RELEASE.jar!/org/springframework/util/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ac/za/cput/projects/controller/AgencyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ac/za/cput/projects/Controller/AgencyControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
         </state>
       </provider>
     </entry>
