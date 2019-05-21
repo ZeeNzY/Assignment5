@@ -2,11 +2,13 @@ package ac.za.cput.projects.domain;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.List;
 import java.util.Objects;
 @EntityScan
 public class Agency {
 
-    private String agency_id, agency_Name, agency_address,  actors, extras;
+    private String agency_id, agency_Name, agency_address;
+    private List talent;
     private String year_established;
 
     private Agency(){}
@@ -15,8 +17,7 @@ public class Agency {
         this.agency_id = builder.agency_id;
         this.agency_Name = builder.agency_Name;
         this.agency_address = builder.agency_address;
-        this.actors = builder.actors;
-        this.extras = builder.extras;
+        this.talent = builder.talent;
         this.year_established = builder.year_established;
     }
 
@@ -32,25 +33,27 @@ public class Agency {
         return agency_address;
     }
 
-    public String getActors() {
-        return actors;
-    }
-
-    public String getExtras() {
-        return extras;
+    public List getTalent() {
+        return talent;
     }
 
     public String getYear_establisheds() {
-        return extras;
+        return year_established;
     }
 
     public static class Builder {
 
-        String agency_id, agency_Name, agency_address,  actors, extras;
+        String agency_id, agency_Name, agency_address;
         String year_established;
+        private List talent;
 
         public Agency.Builder agencyId(String agency_id) {
             this.agency_id = agency_id;
+            return this;
+        }
+
+        public Agency.Builder talentList(List talent){
+            this.talent = talent;
             return this;
         }
 
@@ -64,15 +67,18 @@ public class Agency {
             return this;
         }
 
-        public Agency.Builder actors(String actors) {
-            this.actors = actors;
+
+        public Agency.Builder year(String year_established) {
+            this.year_established = year_established;
             return this;
         }
 
-        public Agency.Builder extras(String extras) {
-            this.extras = extras;
+        public Builder copy(Agency agency){
+            this.agency_id = agency.agency_id;
+            this.agency_Name = agency.agency_Name;
+
             return this;
-            }
+        }
 
         public Agency build() {
             return new Agency(this);
@@ -86,8 +92,7 @@ public class Agency {
                 "agency_id='" + agency_id + '\'' +
                 ", agency_Name='" + agency_Name + '\'' +
                 ", agency_address='" + agency_address + '\'' +
-                ", actors='" + actors + '\'' +
-                ", extras='" + extras + '\'' +
+                ", talent='" + talent + '\'' +
                 ", year_established='" + year_established + '\'' +
                 '}';
     }
@@ -100,13 +105,12 @@ public class Agency {
         return Objects.equals(agency_id, agency.agency_id) &&
                 Objects.equals(agency_Name, agency.agency_Name) &&
                 Objects.equals(agency_address, agency.agency_address) &&
-                Objects.equals(actors, agency.actors) &&
-                Objects.equals(extras, agency.extras) &&
+                Objects.equals(talent, agency.talent) &&
                 Objects.equals(year_established, agency.year_established);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(agency_id, agency_Name, agency_address, actors, extras, year_established);
+        return Objects.hash(agency_id, agency_Name, agency_address, talent, year_established);
     }
 }

@@ -1,53 +1,72 @@
 package ac.za.cput.projects.repository.impl;
 
 import ac.za.cput.projects.domain.Persons.Talent;
+import ac.za.cput.projects.factory.Persons.TalentFactory;
 import ac.za.cput.projects.repository.TalentRepository;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
+import org.junit.runners.MethodSorters;
+
+import java.util.Set;
 
 import static org.junit.Assert.*;
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TalentRepoImpTest {
 
     private TalentRepository repository;
     private Talent talent;
 
+
+    private Talent getTalent() {
+        Set<Talent> talentSet = this.repository.getAll();
+        return talentSet.iterator().next();
+    }
+
     @Before
     public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
-
-    @Test
-    public void getRepository() {
+        this.repository = TalentRepoImp.getRepository();
+        this.talent = TalentFactory.getTalent("Zinzi", "Gulwa","Actor","Brown");
     }
 
     @Test
     public void create() {
-        assertEquals(repository.create(talent),repository.create(talent));
+        Talent created = this.repository.create(this.talent);
+        System.out.println("In create, created = " + created);
+        getAll();
+        Assert.assertSame(created, this.talent);
     }
 
     @Test
     public void read() {
-        assertEquals(repository.read(String.valueOf(talent.gettalent_id())),repository.read(String.valueOf(talent.gettalent_id())));
+//        Talent talent = getTalent();
+        System.out.println("In read, talent_id = "+ talent.gettalent_id());
+        Talent read = this.repository.read(talent.gettalent_id());
+        System.out.println("In read, read = " + read);
+        getAll();
+   //     Assert.assertEquals(talent, read);
     }
 
     @Test
     public void delete() {
-        repository.delete(String.valueOf(talent.gettalent_id()));
+        Talent talent = getTalent();
+        this.repository.delete(talent.gettalent_id());
+        getAll();
     }
 
     @Test
     public void update() {
-        assertEquals(repository.update(talent),repository.update(talent));
+        String name = "Zee";
+//        Talent talent = new Talent.Builder().copy(getTalent()).name(name).build();
+        System.out.println("In update, about_to_updated = " + talent);
+        Talent updated = this.repository.update(talent);
+        System.out.println("In update, updated = " + updated);
+   //     Assert.assertSame(name, updated.getName());
+        getAll();
     }
 
     @Test
     public void getAll() {
-        assertEquals(repository.getAll(),repository.getAll());
+        Set<Talent> all = this.repository.getAll();
+        System.out.println("In getAll, all = " + all);
     }
 
 }

@@ -47,6 +47,13 @@ public class ProductionHouse {
             return this;
         }
 
+        public Builder copy(ProductionHouse productionHouse){
+            this.prodhouseId = productionHouse.prodhouseId;
+            this.prodhouse_Name = productionHouse.prodhouse_Name;
+
+            return this;
+        }
+
         public ProductionHouse build() {
             return new ProductionHouse(this);
         }

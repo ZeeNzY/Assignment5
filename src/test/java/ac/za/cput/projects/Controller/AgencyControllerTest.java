@@ -15,6 +15,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.HttpClientErrorException;
 
+import java.util.List;
+
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
 
@@ -26,6 +28,8 @@ public class AgencyControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
     private String baseURL="http://localhost:8080/agency";
+    private Agency agency;
+    private List talent = agency.getTalent();
 
     @Test
     public void testGetAllStudents() {
@@ -46,7 +50,7 @@ public class AgencyControllerTest {
 
     @Ignore
     public void testCreateStudent() {
-        Agency agency = AgencyFactory.getAgency("111"," DLC","Mowbray","Actors","Extras");
+        Agency agency = AgencyFactory.getAgency("111"," DLC", talent,"2013");
 
         ResponseEntity<Agency> postResponse = restTemplate.postForEntity(baseURL + "/create", agency, Agency.class);
         assertNotNull(postResponse);

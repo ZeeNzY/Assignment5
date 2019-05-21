@@ -6,7 +6,7 @@ import java.util.Objects;
 @EntityScan
 public class Booking {
 
-    private String booking_id, talent_id, agency_id, dateOfbooking;
+    private String booking_id, talent_id, agency_id, dateOfbooking, talent_Type;
 
     private Booking(){}
 
@@ -14,6 +14,7 @@ public class Booking {
         this.booking_id = builder.booking_id;
         this.talent_id = builder.talent_id;
         this.agency_id = builder.agency_id;
+        this.talent_Type = builder.talent_Type;
         this.dateOfbooking = builder.dateOfbooking;
     }
 
@@ -33,9 +34,13 @@ public class Booking {
         return dateOfbooking;
     }
 
+    public String getTalent_Type() {
+        return talent_Type;
+    }
+
     public static class Builder {
 
-        private String booking_id, talent_id, agency_id, dateOfbooking;
+        private String booking_id, talent_id, agency_id, dateOfbooking, talent_Type;
 
         public Booking.Builder booking_id(String booking_id) {
             this.booking_id = booking_id;
@@ -57,6 +62,18 @@ public class Booking {
             return this;
         }
 
+        public Booking.Builder talentType(String talent_Type) {
+            this.talent_Type = talent_Type;
+            return this;
+        }
+
+        public Builder copy(Booking booking){
+            this.agency_id = booking.booking_id;
+            this.dateOfbooking = booking.getdateOfbooking();
+
+            return this;
+        }
+
         public Booking build() {
             return new Booking(this);
         }
@@ -70,6 +87,7 @@ public class Booking {
                 ", talent_id='" + talent_id + '\'' +
                 ", agency_id='" + agency_id + '\'' +
                 ", dateOfbooking='" + dateOfbooking + '\'' +
+                ", talent_Type='" + talent_Type + '\'' +
                 '}';
     }
 
@@ -81,11 +99,12 @@ public class Booking {
         return Objects.equals(booking_id, booking.booking_id) &&
                 Objects.equals(talent_id, booking.talent_id) &&
                 Objects.equals(agency_id, booking.agency_id) &&
-                Objects.equals(dateOfbooking, booking.dateOfbooking);
+                Objects.equals(dateOfbooking, booking.dateOfbooking) &&
+                Objects.equals(talent_Type, booking.talent_Type);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(booking_id, talent_id, agency_id, dateOfbooking);
+        return Objects.hash(booking_id, talent_id, agency_id, dateOfbooking, talent_Type);
     }
 }

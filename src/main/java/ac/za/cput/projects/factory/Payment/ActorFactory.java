@@ -1,4 +1,4 @@
-package ac.za.cput.projects.factory.Persons;
+package ac.za.cput.projects.factory.Payment;
 
 import ac.za.cput.projects.domain.payments.Actors;
 

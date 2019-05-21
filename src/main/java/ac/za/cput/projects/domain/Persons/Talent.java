@@ -10,9 +10,8 @@ public class Talent {
     private String talent_id;
     Persons persons;
 
-    private String name = persons.getName();
-    private String surname = persons.getSurname();
-    private String type = persons.gettype();
+    private String name;
+    private String surname;
 
 
     private Talent(){
@@ -21,7 +20,6 @@ public class Talent {
     private Talent(Builder builder) {
         this.name = builder.name;
         this.surname = builder.surname;
-        this.type = builder.type;
         this.talent_id = builder.talent_id;
         this.category = builder.category;
         this.eyeColor = builder.eyeColor;
@@ -40,9 +38,6 @@ public class Talent {
         return surname;
     }
 
-    public String getType(){
-        return type;
-    }
     public String getcategory() {
         return category;
     }
@@ -56,9 +51,8 @@ public class Talent {
         private String category, eyeColor;
         private String talent_id;
         Persons persons;
-        private String name = persons.getName();
-        private String surname = persons.getSurname();
-        private String type = persons.gettype();
+        private String name;
+        private String surname;
 
 
         public Talent.Builder talent_Id(String talent_id) {
@@ -76,11 +70,6 @@ public class Talent {
             return this;
         }
 
-        public Talent.Builder type(String type) {
-            this.type = type;
-            return this;
-        }
-
         public Talent.Builder category(String category) {
             this.category = category;
             return this;
@@ -88,6 +77,13 @@ public class Talent {
 
         public Talent.Builder eyeColor(String eyeColor) {
             this.eyeColor = eyeColor;
+            return this;
+        }
+
+        public Builder copy(Talent talent){
+            this.talent_id = talent.talent_id;
+            this.name = talent.name;
+
             return this;
         }
 
@@ -106,7 +102,6 @@ public class Talent {
                 ", persons=" + persons +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", type='" + type + '\'' +
                 '}';
     }
 
@@ -120,12 +115,11 @@ public class Talent {
                 Objects.equals(eyeColor, talent.eyeColor) &&
                 Objects.equals(persons, talent.persons) &&
                 Objects.equals(name, talent.name) &&
-                Objects.equals(surname, talent.surname) &&
-                Objects.equals(type, talent.type);
+                Objects.equals(surname, talent.surname);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(category, eyeColor, talent_id, persons, name, surname, type);
+        return Objects.hash(category, eyeColor, talent_id, persons, name, surname);
     }
 }

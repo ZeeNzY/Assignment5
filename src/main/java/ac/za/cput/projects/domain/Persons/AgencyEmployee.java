@@ -10,9 +10,9 @@ public class AgencyEmployee {
     private String emp_id;
     private Persons persons;
 
-    private String name = persons.getName();
-    private String surname = persons.getSurname();
-    private String type = persons.gettype();
+    private String name;
+    private String surname;
+    private String type;
 
     private AgencyEmployee(){}
 
@@ -20,7 +20,6 @@ public class AgencyEmployee {
         this.emp_id = builder.emp_id;
         this.name = builder.name;
         this.surname = builder.surname;
-        this.type = builder.type;
         this.position = builder.position;
     }
 
@@ -36,18 +35,13 @@ public class AgencyEmployee {
         return surname;
     }
 
-    public String getType(){
-        return type;
-    }
-
     public static class Builder {
 
         private String position;
         private String emp_id;
         private Persons persons;
-        private String name = persons.getName();
-        private String surname = persons.getSurname();
-        private String type = persons.gettype();
+        private String name;
+        private String surname;
 
         public Builder emp_id(String emp_id){
             this.emp_id = emp_id;
@@ -64,13 +58,16 @@ public class AgencyEmployee {
             return this;
         }
 
-        public AgencyEmployee.Builder type(String type) {
-            this.type = type;
+        public Builder position( String position) {
+            this.position = position;
             return this;
         }
 
-        public Builder position( String position) {
-            this.position = position;
+        public Builder copy(AgencyEmployee agencyEmployee){
+            this.emp_id = agencyEmployee.emp_id;
+            this.name = agencyEmployee.name;
+            this.surname = agencyEmployee.surname;
+
             return this;
         }
 

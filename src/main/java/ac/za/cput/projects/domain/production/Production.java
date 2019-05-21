@@ -39,6 +39,13 @@ public class Production {
             return this;
         }
 
+        public Builder copy(Production production){
+            this.production_id = production.production_id;
+            this.production_type = production.production_type;
+
+            return this;
+        }
+
         public Production build() {
             return new Production(this);
         }
