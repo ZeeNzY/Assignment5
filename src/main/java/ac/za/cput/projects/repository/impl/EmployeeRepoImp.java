@@ -8,39 +8,56 @@ import java.util.*;
 @Repository("InMemoryE")
 public class EmployeeRepoImp implements EmployeeRepository {
 
-    private static EmployeeRepoImp repository = null;
-    private Map<String,AgencyEmployee> agencyEmployee;
+    private Set<AgencyEmployee> employees;
+    private static EmployeeRepository employeeRepository;
 
-    private EmployeeRepoImp(){
-        this.agencyEmployee = new HashMap<>();
+    private EmployeeRepoImp() {
+        this.employees = new HashSet<>();
     }
 
-    public static EmployeeRepository getRepository(){
-        if (repository == null) repository = new EmployeeRepoImp();
-        return repository;
+    public static EmployeeRepository getEmployeeRepository() {
+        if (employeeRepository == null) employeeRepository = new EmployeeRepoImp();
+        return employeeRepository;
     }
 
 
-    public AgencyEmployee create(AgencyEmployee agencyEmployee){
-        this.agencyEmployee.put(agencyEmployee.getEmp_id(),agencyEmployee);
-        return agencyEmployee;
+    @Override
+    public AgencyEmployee create(AgencyEmployee employee) {
+        this.employees.add(employee);
+        return employee;
     }
 
-    public AgencyEmployee read(String employeeId){
-        return this.agencyEmployee.get(employeeId);
+    @Override
+    public AgencyEmployee read(String s) {
+        AgencyEmployee employee = this.employees.stream()
+                .filter(e -> e.getName().equalsIgnoreCase(s))
+                .findAny().orElse(null);
+        return employee;
     }
 
-    public void delete(String employeeId) {
-        this.agencyEmployee.remove(employeeId);    }
+    @Override
+    public AgencyEmployee update(AgencyEmployee employee) {
+        AgencyEmployee emp = read(employee.getName());
+        if (emp != null) {
+            AgencyEmployee updated = new AgencyEmployee.Builder().copy(emp)
+                    .name(employee.getName())
+                    .build();
+            delete(emp.getName());
+            this.employees.add(updated);
+            emp = updated;
+        }
+        return emp;
+    }
 
-    public AgencyEmployee update(AgencyEmployee agencyEmployee){
-        this.agencyEmployee.replace(agencyEmployee.getEmp_id(),agencyEmployee);
-        return this.agencyEmployee.get(agencyEmployee.getEmp_id());
+    @Override
+    public void delete(String s) {
+        AgencyEmployee employee = read(s);
+        this.employees.remove(employee);
     }
 
 
     public Set<AgencyEmployee> getAll(){
-        Collection<AgencyEmployee> agencyEmployeeCollection = this.agencyEmployee.values();
+        Collection<AgencyEmployee> agencyEmployeeCollection = this.employees;
         Set<AgencyEmployee> set = new HashSet<>();
         set.addAll(agencyEmployeeCollection);
         return set;

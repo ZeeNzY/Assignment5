@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
-@RestController
-@RequestMapping("/booking")
+//@RestController
+//@RequestMapping("/booking")
 public class BookingController {
-
+/*
     @Autowired
   //  @Qualifier("ServiceImpl")
     private BookingService service;
@@ -46,5 +46,5 @@ public class BookingController {
     @ResponseBody
     public Set<Booking> getAll() {
         return service.getAll();
-    }
+    }*/
 }

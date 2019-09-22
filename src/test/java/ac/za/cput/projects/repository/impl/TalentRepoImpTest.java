@@ -4,12 +4,17 @@ import ac.za.cput.projects.domain.Persons.Talent;
 import ac.za.cput.projects.factory.Persons.TalentFactory;
 import ac.za.cput.projects.repository.TalentRepository;
 import org.junit.*;
+import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Set;
 
 import static org.junit.Assert.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class TalentRepoImpTest {
 
     private TalentRepository repository;

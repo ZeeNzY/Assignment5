@@ -5,12 +5,17 @@ import ac.za.cput.projects.domain.Persons.AgencyEmployee;
 import ac.za.cput.projects.factory.Persons.EmployeesFactory;
 import ac.za.cput.projects.repository.EmployeeRepository;
 import org.junit.*;
+import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Set;
 
 import static org.junit.Assert.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class EmployeeRepoImpTest {
 
     private EmployeeRepository repository;
@@ -23,7 +28,7 @@ public class EmployeeRepoImpTest {
 
     @Before
     public void setUp() throws Exception {
-        this.repository = EmployeeRepoImp.getRepository();
+        this.repository = EmployeeRepoImp.getEmployeeRepository();
         this.employee = EmployeesFactory.getEmployees("Zinzi","Gulwa","Manager");
     }
 

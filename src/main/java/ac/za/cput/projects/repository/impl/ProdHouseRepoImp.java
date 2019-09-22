@@ -36,8 +36,8 @@ public class ProdHouseRepoImp implements ProdHouseRepository {
     }
 
     public ProductionHouse update(ProductionHouse productionHouse){
-        this.productionHouse.replace(productionHouse.getProdhouseId(),productionHouse);
-        return this.productionHouse.get(productionHouse.getProdhouseId());
+       // this.productionHouse.replace(productionHouse.getProdhouseId(),productionHouse);
+       return this.productionHouse.get(productionHouse.getProdhouseId());
     }
 
 

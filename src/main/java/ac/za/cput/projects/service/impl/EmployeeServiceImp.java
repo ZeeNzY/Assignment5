@@ -15,7 +15,7 @@ public class EmployeeServiceImp implements EmployeeService {
     private static EmployeeServiceImp service = null;
 
     private EmployeeServiceImp(){
-        this.repository = EmployeeRepoImp.getRepository();
+        this.repository = EmployeeRepoImp.getEmployeeRepository();
     }
 
     public static EmployeeServiceImp getService(){

@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
-@RestController
-@RequestMapping("/production")
+//@RestController
+//@RequestMapping("/production")
 public class ProductionController {
-    @Autowired
+  /*  @Autowired
    // @Qualifier("ServiceImpl")
     private ProductionService service;
 
@@ -44,5 +44,5 @@ public class ProductionController {
     @ResponseBody
     public Set<Production> getAll() {
         return service.getAll();
-    }
+    }*/
 }

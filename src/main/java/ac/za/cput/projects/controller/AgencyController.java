@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
-@RestController
-@RequestMapping("/agency")
+//@RestController
+//@RequestMapping("/agency")
 public class AgencyController {
-
-    @Autowired
+/*
+  //  @Autowired
    // @Qualifier("ServiceImpl")
     private AgencyService service;
 
@@ -46,5 +46,5 @@ public class AgencyController {
     public Set<Agency> getAll() {
         return service.getAll();
     }
-
+*/
 }

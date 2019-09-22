@@ -4,12 +4,17 @@ import ac.za.cput.projects.domain.production.ProductionHouse;
 import ac.za.cput.projects.factory.Production.ProductionHouseFactory;
 import ac.za.cput.projects.repository.ProdHouseRepository;
 import org.junit.*;
+import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Set;
 
 import static org.junit.Assert.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class ProdHouseRepoImpTest {
 
     private ProdHouseRepository repository;

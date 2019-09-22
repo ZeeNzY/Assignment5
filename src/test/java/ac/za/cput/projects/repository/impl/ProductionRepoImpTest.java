@@ -4,12 +4,17 @@ import ac.za.cput.projects.domain.production.Production;
 import ac.za.cput.projects.factory.Production.ProductionFactory;
 import ac.za.cput.projects.repository.ProductionRepository;
 import org.junit.*;
+import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Set;
 
 import static org.junit.Assert.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class ProductionRepoImpTest {
 
     private ProductionRepository repository;
