@@ -11,7 +11,7 @@ import java.util.Set;
 //@RestController
 //@RequestMapping("/agency")
 public class AgencyController {
-/*
+
   //  @Autowired
    // @Qualifier("ServiceImpl")
     private AgencyService service;
@@ -46,5 +46,5 @@ public class AgencyController {
     public Set<Agency> getAll() {
         return service.getAll();
     }
-*/
+
 }

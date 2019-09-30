@@ -11,7 +11,7 @@ import java.util.Set;
 //@RestController
 //@RequestMapping("/talent")
 public class TalentController {
-    /*    @Autowired
+        @Autowired
       //  @Qualifier("ServiceImpl")
         private TalentService service;
 
@@ -44,5 +44,5 @@ public class TalentController {
         @ResponseBody
         public Set<Talent> getAll() {
             return service.getAll();
-        }*/
+        }
 }

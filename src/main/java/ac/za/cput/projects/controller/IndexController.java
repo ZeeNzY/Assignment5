@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @RequestMapping(value = {"/", "/Assignment5"})
+    @RequestMapping(value = {"/", "/Assignment5/create"})
     public ResponseEntity<String> home() {
         return new ResponseEntity<>("Welcome to the Production App!", HttpStatus.OK);
     }

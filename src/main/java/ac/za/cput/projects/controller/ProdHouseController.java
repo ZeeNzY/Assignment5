@@ -11,7 +11,7 @@ import java.util.Set;
 //@RestController
 //@RequestMapping("/productionHouse")
 public class ProdHouseController {
-/*
+
     @Autowired
    // @Qualifier("ServiceImpl")
     private ProdHouseService service;
@@ -45,6 +45,6 @@ public class ProdHouseController {
     @ResponseBody
     public Set<ProductionHouse> getAll() {
         return service.getAll();
-    }*/
+    }
 
 }
