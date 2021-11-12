@@ -1,4 +1,9 @@
 # Assignment5
+
+Solid Principles
+MicroWeb Service
+Test Driven Domain
+
 Agency has talent they recruit. 
 The talent are the main actors and axtras. 
 The agency has their employees. 
